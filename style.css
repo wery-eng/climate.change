@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Guerrilla&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=SUSE:wght@100..800&display=swap');
+
+header {
+    background-color: gainsboro;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #007BFF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.1em;
+    padding: 8px 30px;
+    font-weight: 500;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: blueviolet;
+    background-color: gainsboro;
+    border-radius: 4px;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    text-align: initial;
+    width: 100%;
+    padding: 50px 200px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url('WhatsApp\ Image\ 2024-09-15\ at\ 3.19.08\ AM.jpeg') no-repeat center center;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
+.main-content {
+    margin-bottom: 20px;
+}
+
+.main h2 {
+    font-size: 1.4em;
+    margin: 10px 0;
+    padding: 0;
+    line-height: 1.4;
+    font-family: 'Arial', sans-serif;
+    color: gainsboro;
+}
+
+.main h2 span {
+    font-size: 3em;
+    color: #007BFF;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.main h3 {
+    font-size: 1.3em;
+    margin: 20px 0;
+    padding: 0;
+    color: gainsboro;
+}
+
+.main .main-btn {
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    letter-spacing: 1px;
+    padding: 0.9375em 2.1875em;
+    border-radius: 15px;
+    margin: 20px 0;
+    transition: 0.7s ease;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.main .main-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* تنسيق النموذج */
+#auth-form {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+/* تنسيق عنوان النموذج */
+#auth-form h2 {
+    font-size: 1.6em;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+/* تنسيق حقول الإدخال */
+#auth-form input[type="text"],
+#auth-form input[type="email"],
+#auth-form input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* تنسيق أزرار النموذج */
+#auth-form button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* تغيير لون الخلفية للزر عند المرور */
+#auth-form button:hover {
+    background-color: #0056b3;
+}
+
+/* تنسيق زر التبديل بين التسجيل وتسجيل الدخول */
+#toggle-btn {
+    background-color: transparent;
+    color: #007BFF;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+/* تنسيق خلفية الظل */
+#overlay {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* تنسيق زر إغلاق النموذج */
+#auth-form .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ddd;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+#auth-form .close-btn:hover {
+    background: #ccc;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    
+}
+
+.social-icons a {
+    font-size: 3em;
+    color: #ffffff;
+    padding: 1.3px 4px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+.cards {
+    padding: 130px 20px;
+    min-height: 0vh;
+
+}
+
+.title {
+    text-align: center;
+    color: #007BFF;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 200px;
+    max-width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.icon {
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.info h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 10px 0;
+    color: #007BFF;
+}
+
+.info p {
+    font-size: 1em;
+    color: #666;
+}
+
+.Article {
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    padding: 0px 100px;
+    margin-bottom: 50px;          
+}
+
+.Contact {
+    padding: 10px 20px;
+    background-color: #000;
+    /* تغيير لون الخلفية إلى الأسود */
+    margin-bottom: 50px;
+    /* تقليل المسافة السفلية الفارغة */
+}
+
+.Contact .icon {
+    font-size: 4.5em;
+}
+
+.Contact .info h3 {
+    color: black;
+    /* تغيير لون النص إلى الأبيض ليكون واضحًا على الخلفية السوداء */
+}
+
+.Contact .info p {
+    font-size: 1.5em;
+    color: black;
+    /* تغيير لون النص إلى الأبيض ليكون واضحًا على الخلفية السوداء */
+}
+
+.footer {
+    background-color: black;
+    /* لون الخلفية */
+    color: #fff;
+    /* لون النصوص */
+    padding: 20px 50px;
+    /* إضافة حشو داخلي للتذييل */
+    display: flex;
+    /* استخدام Flexbox لتنسيق المحتوى */
+    justify-content: space-between;
+    /* توزيع المساحة بين العناصر */
+    align-items: center;
+    /* توسيط العناصر عموديًا */
+    box-sizing: border-box;
+    /* احتساب الحشو والحدود في الحجم الكلي */
+}
+
+.footer-title {
+    font-size: 1.3em;
+    /* حجم الخط */
+    font-weight: 600;
+    /* وزن الخط */
+    margin: 0;
+    /* إزالة الهوامش */
+}
+
+.footer-title span {
+    color: #fff;
+    /* لون نص التمييز */
+    font-weight: bold;
+    /* جعل النص الغامق */
+}
+
+.social-icons {
+    display: flex;
+    /* استخدام Flexbox لعرض الأيقونات */
+    gap: 15px;
+    /* المسافة بين الأيقونات */
+}
+
+.social-icons a {
+    color: #fff;
+    /* لون الأيقونات */
+    font-size: 1.5em;
+    /* حجم الأيقونات */
+    text-decoration: none;
+    /* إزالة التسطير */
+    transition: color 0.3s ease;
+    /* تأثير التغيير اللوني */
+}
+
+.social-icons a:hover {
+    color: #e0e0e0;
+    /* لون الأيقونات عند المرور عليها */
+}
+@media(max-width:1023px){
+    header{
+     padding: 5px 20px;
+    }
+
+    .navigation a{
+        padding-left: 8px;
+    }
+    .title{
+        font-size:2em;
+    }
+
+    section{ 
+        padding:80px 20px ;
+    }
+   .main-content h2{
+         font-size:1.2em ;
+   }
+   .main-content h3 {
+    font-size: 1.5em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:641px){
+    body{
+        font-size:14px ;
+    }
+    .main-content h2{
+        font-size:1em ;
+    }
+    .main-content h3{
+        font-size:1.3em ;
+    }
+     header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .logo {
+      margin-bottom: 10px;
+    }
+ }
+
+
+@media(max-width:480px){
+    .main {
+            padding: 30px 10px;
+        }
+    
+        .main-content h2 {
+            font-size: 0.9em;
+        }
+    
+        .main-content h3 {
+            font-size: 1.2em;
+        }
+    
+        .title {
+            font-size: 1.8em;
+        }
+    
+        .card {
+            flex: 1 1 150px;
+            max-width: 200px;
+        }
+    
+        .social-icons a {
+            font-size: 1.2em;
+        }
+    }
+    
+@media(max-width: 300px) {
+     body {
+        font-size: 12px;
+        }
+    
+    .title {
+         font-size: 1.5em;
+        }
+    
+    .card {
+        flex: 1 1 120px;
+         max-width: 180px;
+        }
+    
+    .social-icons a {
+        font-size: 1em;
+        }
+    }
